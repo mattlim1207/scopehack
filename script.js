@@ -88,7 +88,7 @@ var names = [
     "Wake Up"
   ]
 ];
-var pointName = Array("points", "% Admission Chance", " Leetcode Challenges Done", " $");
+var pointName = Array(" points", "% Admission Chance", " Leetcode Challenges Done", " $");
 
 function Timer(funct, delayMs, times) {
   if (times == undefined) {
@@ -280,7 +280,7 @@ function prestigeUp() {
 
 function autoprestige() {
   points = 5000000000 * Math.pow(2, prestige);
-  document.getElementById("points").innerHTML = points + pointName[prestige];
+  document.getElementById(" points").innerHTML = points + pointName[prestige];
   if (points >= costs[8]) {
     document.getElementById("8").style.visibility = "visible";
   } 
