@@ -32,15 +32,28 @@ var costAbbrev = Array(
 var prestige = 0;
 var colors = [
   ["#A9EAFF", "#CADAED", "#f7f4f4", "#000000"],
+  ["#717744", "#BCBD8B","#D4EAC8", "#000000"],
   ["#5ADB71", "#3B8F4A", "#252B2B", "#ffffff"],
   ["#8A817C", "#BCB8B1", "#F4F3EE", "#000000"]
 ]
 var messages = Array(
+  "You've made your first prestige! Three mor to go",
   "You've made it to USC, you totally deserve it! Now grind those leetcode challenges and get that dream job",
   "In your leetcode haze, you forgot to make any friends or connections, and end up jobless. It's okay though, you're a self starter!",
   "You wake up. No one actually passes CS104, that's impossible."
 );
 var names = [
+  [
+    "ok-ish",
+    "ok",
+    "gud",
+    "gudr",
+    "better",
+    "gr8",
+    "best",
+    "pro",
+    "proest"
+  ],
   [
     "Volunteer",
     "Create Club",
@@ -75,7 +88,7 @@ var names = [
     "Wake Up"
   ]
 ];
-var pointName = Array(" % Admission Chance", " Leetcode Challenges Done", " $");
+var pointName = Array("points", "% Admission Chance", " Leetcode Challenges Done", " $");
 
 function Timer(funct, delayMs, times) {
   if (times == undefined) {
@@ -256,9 +269,9 @@ function prestigeUp() {
     rest = false;
     count = 0;
     costs[8] *= 2;
-    if (prestige == 3) {
+    if (prestige == 4) {
       prestige = 0;
-      costs[8] /= 4;
+      costs[8] /= 8;
     }
     document.getElementById("8").style.visibility = "hidden";
     initTimer();
