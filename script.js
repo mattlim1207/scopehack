@@ -37,7 +37,7 @@ var colors = [
   ["#8A817C", "#BCB8B1", "#F4F3EE", "#000000"]
 ]
 var messages = Array(
-  "You've made your first prestige! Three mor to go",
+  "You've made your first prestige! Three more to go",
   "You've made it to USC, you totally deserve it! Now grind those leetcode challenges and get that dream job",
   "In your leetcode haze, you forgot to make any friends or connections, and end up jobless. It's okay though, you're a self starter!",
   "You wake up. No one actually passes CS104, that's impossible."
@@ -254,7 +254,7 @@ function upgrade(num, val) {
 
   }
   document.getElementById("ppm").innerHTML =
-    (inc / 3).toFixed(2) + " " + pointName[prestige] + " / s";
+    (inc / 10).toFixed(2) + " " + pointName[prestige] + " / s";
   document.getElementById("points").innerHTML =
     points + " " + pointName[prestige];
 
@@ -280,7 +280,7 @@ function prestigeUp() {
 
 function autoprestige() {
   points = 5000000000 * Math.pow(2, prestige);
-  document.getElementById(" points").innerHTML = points + pointName[prestige];
+  document.getElementById("points").innerHTML = points + pointName[prestige];
   if (points >= costs[8]) {
     document.getElementById("8").style.visibility = "visible";
   } 
