@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clicker Game</title>
+  </head>
+  <script src="node_modules/hacktimer/HackTimer.js"></script>
+  <script src="game.js"></script>
+  <body>
+    <div>
+    </div>
+    <div>
+      <p id="rest">Study Time</p>
+      <p id="timer">Time</p>
+      <button onclick="initTimer(1,1)" id = "25-5">Preset Time(25-5)</button>
+      <button onclick="intenseMode()" id = "intense">Switch</button>
+      <button onclick="pauseTimer()" id="pause">Start</button>
+      <button onclick="resetTimer()" id="reset">Reset</button>
+      <p id="ppm">0 points/sec</p>
+      <p id="points">0 points</p>
+      <button onclick="upgrade(5,0.1)" id="1">Basic(5 points)</button>
+      <button onclick="upgrade(10,0.25)" id="2">Good(10 points)</button>
+      <button onclick="upgrade(15,0.5)" id="3">Better(15 points)</button>
+      <button onclick="upgrade(20,1)" id="4">Great(20 points)</button>
+      <button onclick="upgrade(25,1.5)" id="5">Greater(25 points)</button>
+      <button onclick="upgrade(30,2)" id="6">Greatest(30 points)</button>
+    </div>
+  </body>
+</html>
